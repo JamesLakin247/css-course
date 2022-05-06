@@ -163,3 +163,32 @@ a:visited {
     padding: 15px;
     box-sizing: border-box;
 }
+
+.p-box {
+    width: 800px;
+    height: 500px;
+    border: 1px #000 solid;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../images/bgimage.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.p-box h1 {
+    position: absolute;
+    top: 40px;
+    left: 200px;
+}
+
+.p-box h2 {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me {
+    position: fixed;
+    top: 400px;
+}
