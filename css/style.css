@@ -28,13 +28,31 @@ a:active {
     color: green;
 }
 
+/*
 a:visited {
-    color: #000;
+
 }
+*/
 
 .container {
     width: 80%;
     margin: auto;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.clr {
+    clear: both;
 }
 
 .box-1 {
@@ -96,12 +114,37 @@ a:visited {
 }
 
 .categories li::before {
-        content: '';
-        display: inline-block;
-        height: 10px;
-        width: 10px;
-        background-image: url('../images/check.png');
-        /*size contain and no repeat are important*/
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
+    content: '';
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-image: url('../images/check.png');
+    /*size contain and no repeat are important*/
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.my-form {
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-from label {
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
